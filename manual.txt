@@ -1,0 +1,13 @@
+"scripts": {
+    "dev": "gulp",//npm run dev
+    "build": "gulp build --build",//npm run build
+    "zip": "gulp deployZIP --build",//npm run zip
+    "deploy": "gulp deployFTP --build",//npm run deploy
+    "svgSprive": "gulp svgSprive"//npm run svgSprive
+  }
+
+для инициализации в новом проэкте: 
+1-- вставляем всё содержимое в папку нового проэкта
+2-- папку проэкта открываем в VS Code
+3-- в терминале git bash, из папки проэкта, запускаем команду "npm i"
+4-- далее работаем запуская нужные скрипты

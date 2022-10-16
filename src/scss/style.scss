@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import "nostyle";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+.background {
+    background-image: url('../img/background.jpg');
+    background-attachment: fixed;
+    width: 100%;
+}
+//Стили хедера
+@import "header";
+
+//Стили лендинга
+@import "landing";
+
+//Стили блока новосьей
+@import "news";
+
+//Стили блока "О нас"
+@import "about-us";
+
+//Блок со статьей
+@import "populove";
+
+//Блок суидио плеером
+@import 'player';
+
+//Фото галерея
+@import 'galery';
+
+//Свайпер событий
+@import 'events';
+
+//
+@import 'footer';
+
+//Стили бургера
+@import 'burger';

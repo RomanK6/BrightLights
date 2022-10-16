@@ -1,0 +1,111 @@
+/*
+.footer {}
+.social {}
+.footer__contacts-table {}
+.social_item {}
+.social__link {}
+.social__icon {}
+._item {}
+*/
+.footer__content {
+    max-width: 563px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.footer__logo-block {
+    max-width: 233px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.footer__logo {
+    display: block;
+}
+.footer__contacts {
+    height: 54px;
+    margin-bottom: 60px;
+}
+.table {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.table__row {
+    display: flex;
+}
+.table__title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: right;
+    padding-right: 15px;
+     flex-basis: 45%;
+}
+.table__discription {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 15px;
+    flex-basis: auto;
+}
+.table__link {
+    color: #fff;
+}
+.footer__social {
+    height: 60px;
+    margin-bottom: 100px;
+}
+.social_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__copyright {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-bottom: 40px;
+}
+//====================Медиа запросы======================//
+@media (max-width: 515px) {
+    .table {
+        padding-bottom: 60px;
+    }
+    .table__row {
+        flex-direction: column;
+    }
+    .table * {
+        text-align: center;
+        padding: 0;
+    }
+    .footer__social {
+        height: 140px;
+    }
+    .social_list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .social_item {
+    }
+    .social__link {
+        display: block;
+        margin: 30px;
+    }
+}
+@media (max-width: 390px) {
+    .social__link {
+        margin: 30px 18px;
+    }
+}

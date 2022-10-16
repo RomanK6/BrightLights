@@ -1,0 +1,228 @@
+.about-us {
+    margin-top: 179px;
+    width: 100%;
+}
+.about-us__content {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 0 15px;
+}
+.about-us__descroption-block {
+    width: 50%;
+}
+.about-us__title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    margin-left: 94px;
+    margin-bottom: 60px;
+}
+.about-us__title:before {
+    position: absolute;
+    content: "";
+    background: center / contain no-repeat url("../img/icons/equalizer.svg");
+    width: 64px;
+    height: 31px;
+    top: 22px;
+    left: -94px;
+}
+.about-us__description {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 60px;
+}
+.about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-us__item {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 16.5px;
+    margin-bottom: 16.5px;
+    width: 40%;
+    white-space: nowrap;
+}
+.about-us__item:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -50px;
+    width: 30px;
+    height: 30px;
+    background: #7A66CC;
+    border-radius: 10px 0px;
+}
+//============Свайпер лесенка==============//
+.about-us__gallery {
+    width: 50%;
+}
+.gallery {
+    margin-left: auto;
+    margin-top: 49px;
+    width: 445px;
+    height: 466px;
+    position: relative;
+}
+.gallery-swiper-wriper {
+    display: flex;
+    position: relative;
+}
+.gallery-swiper-wriper:hover {
+
+}
+.gallery-swiper-slide {
+    display: none;
+}
+.gallery__next-btn {
+    width: 45%;
+    height: 466px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+.gallery__prev-btn {
+    width: 45%;
+    height: 466px;
+    position: absolute;
+    z-index: 10;
+}
+.gallery__next-btn:hover {
+    content: '';
+    position: absolute;
+    background: no-repeat center/70% url('../img/icons/arrow-right.svg');
+    top: 0;
+    right: -50px;
+}
+.gallery__prev-btn:hover {
+    content: '';
+    position: absolute;
+    background: no-repeat center/70% url('../img/icons/arrow-left.svg');
+    top: 0;
+    left: -50px;
+}
+.slide-wisible {
+    z-index: 5;
+    margin-left: 0px;
+    margin-top: 0px;
+    display: block;
+    position: absolute;
+
+    /*
+    margin-left: 95px;
+    margin-top: 66px;
+    transform: translate3d(-95px, -66px, 0px);
+    transition: transform 1s;
+    */
+}
+.slide-next {
+    display: block;
+    right: 0;
+    margin-top: 66px;
+    position: absolute;
+    z-index: 0;
+}
+.slide-next img {
+    filter: brightness(40%);
+}
+.gallery-swiper-slide img{
+    border-radius: 30px 0px;
+}
+//============Медиа запросы==============//
+@media (max-width: 1030px) {
+    .about-us__description {
+        font-size: 1em;
+    }
+    .about-us__item {
+        width: 35%;
+        font-size: 1em;
+    }
+}
+@media (max-width: 950px) {
+    .about-us__content {
+        display: block;
+    }
+    .about-us__descroption-block {
+        width: 100%;
+    }
+    .about-us__title {
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .about-us__list {
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .about-us__item {
+        width: 40%;
+    }
+    .about-us__gallery {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .gallery {
+        margin: 0 auto;
+    }
+}
+@media (max-width: 530px) {
+    .about-us {
+        margin-top: 50px;
+    }
+    .about-us__title {
+        font-size: 36px;
+    }
+    .about-us__title:before {
+        width: 48px;
+        left: -70px;
+    }
+    .about-us__description {
+        margin-bottom: 30px;
+    }
+    .about-us__list {
+        display: block;
+    }
+    .gallery {
+        width: 297px;
+        height: 311px;
+    }
+    .gallery-swiper-slide img {
+        width: 234px;
+        height: 267px;
+    }
+    .slide-next {
+        margin-top: 45px;
+    }
+    .gallery__next-btn {
+        height: 267px;
+    }
+    .gallery__prev-btn {
+        height: 267px;
+    }
+}
+@media (max-width: 380px) {
+    .about-us__title {
+        font-size: 30px;
+    }
+    .about-us__title:before {
+        width: 38px;
+        left: -50px;
+    }
+}

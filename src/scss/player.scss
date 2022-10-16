@@ -1,0 +1,248 @@
+/*
+.player {
+}
+.audioplayer {
+}
+.audio-box__musik-player {
+}
+.audioplayer-play-pause {
+}
+.musik-player__progress-bar {
+}
+.audioplayer-progress-bar {
+}
+.musik-player__progress {
+}
+.audioplayer-progress {
+}
+.musik-player__progress-point {
+}
+.musik-player__play-btn {
+}
+.musik-player__audio {
+}
+.audioplayer-audio {
+}
+.audioplayer__follows {
+}
+*/
+.player__content {
+    max-width: 1140px;
+    padding: 0 15px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-top: 29px;
+    padding-bottom: 180px;
+}
+.player__image-block {
+    flex: 1;
+    padding-right: 15px;
+}
+.player__image {
+    border-radius: 50%;
+    border: 17.94px solid #7a66cc99;
+    outline: 18.89px solid #7a66cc4d;
+    margin: 18.89px;//
+    width: 472.22px;
+    height: 472.22px;
+}
+.player__audioplayer {
+    flex: 1;
+}
+.audioplayer__title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    margin-left: 94px;
+}
+.audioplayer__title:before {
+    position: absolute;
+    content: '';
+    background-image: url('../img/icons/equalizer.svg');
+    left: -94px;
+    top: 23px;
+    width: 64px;
+    height: 31px;
+}
+.audioplayer-musik-player {
+    margin-top: 60px;
+}
+.audioplayer-play-btn {
+    width: 20%;//27px
+    height: 100%;//25px
+    top: 0;
+    background: center / contain no-repeat url("../img/icons/play.svg");
+    cursor: pointer;
+}
+.audioplayer-time-bar {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: right;
+    white-space: nowrap;
+}
+.musik-player__audio-list {
+    margin-top: 50px;
+}
+ol {
+	list-style-type: none; 
+	counter-reset: num;
+	padding: 0 0 0 0;
+}
+ol li {
+	position: relative;	
+	margin: 0 0 0 0;
+	padding: 0 0 0 35px;
+}
+ol li:before {
+	content: '0' counter(num); 
+	counter-increment: num;
+	display: inline-block;	
+	position: absolute;
+	top: 4px;
+	left: 0px;
+	width: 20px;    
+	color: #ffffff80;
+
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.musik-player__track {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 20px 0;
+}
+.follows {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+.follows__title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-right: 40px;
+}
+.follows__link {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 30px;
+    color: #fff;
+    position: relative;
+}
+#spotify:before {
+    content: url('../img/icons/Spotify.svg');
+    position: absolute;
+    top: -5px;
+    left: -40px;
+}
+#itunes:before {
+    content: url('../img/icons/iTunes.svg');
+    position: absolute;
+    top: -5px;
+    left: -40px;
+}
+//=======================Медиа запросы======================//
+@media (max-width: 1073px) {
+    .player__image {
+        width: 44vw;
+        height: 44vw;
+    }
+}
+@media (max-width: 836px) {
+    .follows {
+        margin-left: -50%;
+    }
+    .audioplayer__title {
+        font-size: 40px;
+    }
+    .audio-box__musik-player {
+        flex-direction: column;
+        height: 160px;
+    }
+    .audio-box__musik-player > * {
+        margin: 15px;
+    }
+    .audioplayer-progress-bar {
+        width: 90%;
+    }
+}
+@media (max-width: 716px) {
+    .player__image-block {
+        display: none;
+        //position: absolute;
+        //filter: brightness(40%);
+    }
+    .audioplayer__title {
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .audioplayer__title:before {
+        left: -87px;
+        top: 23px;
+        width: 64px;
+        height: 31px;
+    }
+    .audio-box__musik-player {
+        z-index: 111;
+    }
+    .musik-player__audio-list {
+        margin-left: 50px;
+        position: relative;
+    }
+    .musik-player__audio-list:before {
+        position: absolute;
+        content: '';
+        width: 70vw;
+        height: 70vw;
+        background: center / contain no-repeat url('../img/Ellipse 4.jpg');
+        border-radius: 50%;
+        border: 17.94px solid #7a66cc99;
+        outline: 18.89px solid #7a66cc4d;
+        filter: brightness(40%);
+    }
+    .follows {
+        margin-left: 0;
+        justify-content: center;
+    }
+    .follows__title {
+        z-index: 11;
+    }
+}
+@media (max-width: 416px) {
+    .follows {
+        flex-direction: column;
+    }
+    .follows__link {
+        margin-top: 30px;
+    }
+    .musik-player__audio-list {
+        margin-left: 0;
+    }
+    .musik-player__track {
+        font-size: 14px;
+    }
+}
